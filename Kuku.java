@@ -6,6 +6,17 @@ class Kuku{
             System.out.print(a * b + " ");
             }
             System.out.print("\n");
-        }   
+
+            if(a == 9){
+                System.out.println("");
+            }
+        }
+        for(int a = 1;a < 10;a++){
+            for(int b = 1; b < 10; b++ ){
+             System.out.println(a + " + " + b + " = " + (a+b));
+            }
+            System.out.println("");
+        }
+
     }
 }
