@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 class Sort{
     public static void main(String[] args){
         //変数説明　a:配列データ b:配列aの要素数を記憶　k:回避 j:ソートカウンタ＆ソート前数字　i:表示のカウンタ＆ソート後ろ数字(j＋１)
@@ -7,7 +7,7 @@ class Sort{
         int i, j, k;
         
         //ソート前のデータ表示
-        System.out.println("データの表示");
+        
         for(i = 0;i < b;i++){
             System.out.print(a[i] + " ");
         }
@@ -28,11 +28,10 @@ class Sort{
             }
         }
         //ソート後データ表示
-        System.out.println("並び替え後のデータの表示");
-        for(i = 0;i < b;i++){
-            System.out.print(a[i] + " ");
+        System.out.println("並び替え後のデータを表示");
+        for(i = 0; i < b; i++){
+            System.out.println(a[i] + " ");
         }
-
         
     }
 }
