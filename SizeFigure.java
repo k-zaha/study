@@ -71,6 +71,9 @@ class Circle extends Figure {
     void around() { //抽象メソッドのオーバーライド
         System.out.println("円の外周：" + (2 * radius * pi));
     }
+    void nmethod(){
+        System.out.println("テストデータ");
+    }
 }
 
 
@@ -78,13 +81,16 @@ class SizeFigure {
     public static void main(String[] args) {
         Figure fig1 = new Square(2.5);
         Figure fig2 = new Square(2.3, 3.7);
-        Circle fig3 = new Circle(3.6);
+        Figure fig3 = new Circle(3.6);
         //Figure fig4 = new Circle(5);
         fig1.measure();
         fig2.measure();
         fig3.measure();
+        fig3.nmethod();
+        //Circleクラスで新たに定義した、nmethodは、定義がなされていない親クラスの
+        //Figureでオブジェクトの宣言をする(84列目)と、エラーが出る。(コンパイルと実行はできる。)
         //fig4.measure();
+        System.out.println();
     
-
     }
 }

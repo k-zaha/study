@@ -15,10 +15,12 @@ enum Animal {Cat, Dog, Rabbit }
 class Pet {
     private Animal kind;  //Privateだから、このフィールドはPetクラス内からしか呼び出せない。
     private String name;
+
     
     public Pet(Animal aml, String nm) {
         kind = aml;
         name = nm;
+
     }
     public Animal getKind(){
         return kind;
@@ -34,7 +36,8 @@ class EnumSample {
         lst.add(new Pet(Animal.Dog, "Suzukikun"));
         lst.add(new Pet(Animal.Cat, "Nyaomi"));
         lst.add(new Pet(Animal.Rabbit, "Tigger"));
-        
+
+        System.out.println(lst);
         for(Pet pt : lst) {
             
             if(pt.getKind() == Animal.Dog) {
